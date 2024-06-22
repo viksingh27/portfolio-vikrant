@@ -1,0 +1,25 @@
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3); /* Light circle background */
+    border-radius: 50%;
+    border-color: blueviolet;
+    pointer-events: none; /* Ensure cursor doesn't block interactions */
+    transform: translate3d(0, 0, 0);
+    transition: transform .1s linear; 
+    /* Smooth transition */
+    z-index: 9999; /* Ensure it stays on top of other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-cursor-dot {
+    width: 2px; /* Adjust size as needed */
+    height: 2px;
+    background: yellow; /* Yellow dot */
+    border-radius: 50%;
+  }

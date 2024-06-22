@@ -1,0 +1,100 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    width:100;
+    background-color: #252734;/* Transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: yellow; /* Yellow color for the brand name */
+    font-weight: bold;
+    margin-right: 20px; /* Add margin for spacing */
+  }
+  
+  .navbar-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: yellow;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin-left: 20px; /* Adjust margin between menu items */
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: yellow; /* Yellow color for the menu items */
+    font-size: 18px;
+  }
+  
+  .navbar-menu li a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .navbar-brand {
+      margin-right: 0; /* Remove margin for brand name */
+      margin-bottom: 10px; /* Add margin bottom for spacing */
+    }
+  
+    .navbar-toggle {
+      display: block; /* Display toggle button for small screens */
+    }
+  
+    .navbar-menu {
+      display: none; /* Hide menu items by default */
+      flex-direction: column;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9); /* Slightly darker for mobile */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 10px 0;
+      margin: 0; /* Ensure no margin */
+    }
+  
+    .navbar-menu.open {
+      display: flex; /* Show menu items when open class is applied */
+    }
+  
+    .navbar-menu li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .navbar-menu li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .navbar-menu li a {
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+  }
+  

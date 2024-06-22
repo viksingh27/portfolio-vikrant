@@ -1,0 +1,1 @@
+const FE_HOST = process.env.localhost
