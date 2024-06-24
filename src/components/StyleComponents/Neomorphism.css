@@ -1,6 +1,6 @@
 .neumorphism-div {
-  width: 300px;
-  height: 300px;
+  width: 80%;
+  height: 600px;
   background: #252734;
   border-radius: 20px;
   box-shadow: 15px 15px 75px #1d1e27, -23px -25px 75px #373a4b;
@@ -10,6 +10,7 @@
   color: white;
   font-size: 16px;
   text-align: center;
+  margin-left: 10%;
 }
 
 /* box-shadow:  */
