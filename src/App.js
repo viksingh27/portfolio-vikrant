@@ -5,7 +5,12 @@ import Navbar from "./components/Navbar";
 // import Footer from './components/Footer';
 // import CustomCursor from './components/CustomCursor';
 import AnimatedCursor from "react-animated-cursor";
-import NeumorphismDiv from "./components/StyleComponents/Neomorphism";
+// import NeumorphismDiv from "./components/StyleComponents/Neomorphism";
+// import MainContainer from "./components/Containers/MainContainer";
+import HomeSection from "./components/Containers/Sections/HomeSection";
+import CareerSection from "./components/Containers/Sections/CareerSection";
+import SkillsSection from "./components/Containers/Sections/SkillsSection";
+import ResumeSection from "./components/Containers/Sections/ResumeSection";
 function App() {
   return (
     <div className="App">
@@ -21,9 +26,11 @@ function App() {
         // trailingSpeed={0}
         innerStyle={{
           backgroundColor: "var(--cursor-color)",
+          zIndex: 10000,
         }}
         outerStyle={{
           border: "3px solid var(--cursor-color)",
+          zIndex: 10000,
         }}
         clickables={[
           "a",
@@ -51,10 +58,14 @@ function App() {
         ]}
       />
       <Firefly />
-      {/* <Navbar/> */}
-      <div className="main-content">
-        <NeumorphismDiv />
-      </div>
+      <Navbar />
+      <HomeSection id="home" />
+      <CareerSection id="career" />
+      {/* <SkillsSection id="skills" /> */}
+      {/* <ResumeSection id="resume" /> */}
+      {/* <div className="main-content">
+       
+      </div> */}
       {/* <Footer/> */}
     </div>
   );

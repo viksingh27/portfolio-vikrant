@@ -1,22 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple");
+
+/* body {
+  font-family: 'Source Sans Pro', sans-serif;
+} */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: "Source Sans Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth; 
-  cursor: none; 
+  scroll-behavior: smooth;
+  cursor: none;
   /* Hide the default cursor */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 html {
-  --cursor-color: rgba(190, 109, 0, 1)
+  --cursor-color: rgba(190, 109, 0, 1);
 }
 
 /* html.dark-mode {
@@ -30,29 +37,31 @@ html {
 }
  */
 
-
 /* Section Styles */
-section {
+/* section {
   padding: 60px 20px;
-}
+} */
 
-h1, h2, h3, h4, h5, h6 {
-  color: #BB86FC;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #bb86fc;
   margin: 0 0 20px;
 }
 
 p {
-  color: #B0B0B0;
+  color: #b0b0b0;
 }
 
 a {
-  color: #03DAC6;
+  color: #03dac6;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #FF0266;
+  color: #ff0266;
 }
-
-

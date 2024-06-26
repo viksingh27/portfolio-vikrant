@@ -1,63 +1,35 @@
-// src/components/Navbar.js
-import React, { useState, useEffect } from 'react';
-import './Navbar.css';
+import React from "react";
+import { Link } from "react-scroll";
+import "./Navbar.css";
 
 const Navbar = () => {
-  const [navbarStyle, setNavbarStyle] = useState({
-    position: 'sticky',
-    top: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    padding: '10px 20px',
-    transition: 'background-color 0.3s ease, padding 0.3s ease'
-  });
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setNavbarStyle({
-          position: 'fixed',
-          top: 0,
-          backgroundColor: '#252734',
-          padding: '8px 20px'
-        });
-      } else {
-        setNavbarStyle({
-          position: 'sticky',
-          top: 0,
-          backgroundColor: '#25273407',
-          padding: '10px 20px'
-        });
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <nav className="navbar" style={navbarStyle}>
-      <div className="navbar-brand">
-        Vikrant
-      </div>
-      <button className="navbar-toggle" onClick={toggleMenu}>
-        ☰
-      </button>
-      <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#career">Career</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-      </ul>
-    </nav>
+    <>
+      <nav className="navbar">
+        <ul className="navbar-menu">
+          <li className="navbar-item">
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="career" smooth={true} duration={500}>
+              Career
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="resume" smooth={true} duration={500}>
+              Resume
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 };
 

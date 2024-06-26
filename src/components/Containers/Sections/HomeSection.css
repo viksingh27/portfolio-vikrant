@@ -1,0 +1,82 @@
+.home-page {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0 20px; /* Margin on both sides */
+  /* background-color: #d07676; Background color for the home section */
+  padding: 45px;
+}
+
+.text-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.main-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgba(255, 180, 0, 0.8); /* Main text color */
+  margin: 0; /* Remove default margins */
+  margin-top: 0; /* Ensure no margin at the top */
+}
+
+.sub-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.743); /* Subtext color */
+  margin-top: 10px;
+  line-height: 1.5; /* Adjust line height as needed */
+  font-style: italic;
+}
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  position: absolute;
+}
+
+.bottom-image {
+  z-index: 1;
+  width: 400px;
+  height: 400px;
+}
+
+.top-image {
+  z-index: 2;
+  width: 80%;
+  height: 80%;
+  object-fit: cover; /* Ensure the image fits the container */
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack the text and images vertically on smaller screens */
+  }
+
+  .text-container {
+    padding-right: 0;
+    padding-bottom: 20px; /* Add some space between text and image on small screens */
+  }
+
+  .image-container {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-text {
+    font-size: 1.5em;
+  }
+
+  .sub-text {
+    font-size: 0.9em;
+  }
+}

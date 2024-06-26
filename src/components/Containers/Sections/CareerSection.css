@@ -1,0 +1,13 @@
+.career-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.career-heading {
+  font-size: 4em; /* Adjust size as needed */
+  /* font-weight: bold; */
+  color: rgba(255, 180, 0, 0.8);
+  text-align: center;
+}
