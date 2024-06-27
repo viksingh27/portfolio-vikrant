@@ -14,6 +14,7 @@ const HomeSection = ({ id }) => {
       <div className="home-page">
         <div className="text-container">
           <h1 className="main-text">I'm a Frontend Developer</h1>
+          <h2 className="main-sub-text">Vikrant Singh Chauhan</h2>
           <p className="sub-text">
             I am a dedicated Front-End Developer with 3 years of experience and
             proficiency in front-end frameworks, databases, and back-end

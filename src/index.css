@@ -14,6 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   cursor: none;
+
   /* Hide the default cursor */
 }
 

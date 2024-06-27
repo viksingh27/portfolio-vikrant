@@ -1,6 +1,6 @@
 .neumorphism-div {
-  width: 75%;
-  height: 400px;
+  /* width: 75%; */
+  /* height: 400px; */
   background: #252734;
   border-radius: 20px;
   box-shadow: 15px 15px 75px #1d1e27, -23px -25px 75px #373a4b;
@@ -11,6 +11,23 @@
   font-size: 16px;
   text-align: center;
   margin-left: 10%;
+}
+
+.timeline-content {
+  /* background-color: #f5f5f5; */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.5em; /* Adjust size as needed */
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+  font-size: 1em; /* Adjust size as needed */
 }
 
 /* box-shadow:  */
