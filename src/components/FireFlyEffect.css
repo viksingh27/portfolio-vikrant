@@ -1,6 +1,7 @@
 /* src/components/Firefly.css */
 
 .firefly-container {
+  height: auto;
   position: fixed;
   width: 100%;
   height: 1000px;

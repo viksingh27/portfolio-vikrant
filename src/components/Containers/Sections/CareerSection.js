@@ -6,7 +6,9 @@ import NeumorphismDiv from "../../StyleComponents/Neomorphism";
 const CareerSection = ({ id }) => {
   return (
     <section id={id} className="career-section">
-      <h1 className="career-heading">Career</h1>
+      <h1 className="career-heading">
+        Professional / Acadmic <br /> Career
+      </h1>
       <Timeline
         className="career-timeline "
         mode="alternate"
@@ -19,40 +21,96 @@ const CareerSection = ({ id }) => {
             ),
             children: (
               <NeumorphismDiv
-                style={{ height: "100px", width: "100px" }}
-                collage="shri shankaracharya mahavidyalaya"
-                degree={"Bachelor Of Comerce"}
-                yearPassing={"2018"}
+                style={{ height: "180px", width: "125%" }}
+                collage="Shri Shankaracharya Mahavidyalaya"
+                degree={"Bachelor Of Commerce (B.Com)"}
+                yearPassing={"June 2018"}
+                percentage={"CGPA :- 6.0 Percentage :- 55%"}
                 label={"Graduation"}
               />
             ),
           },
           {
-            label: "2015-09-01 09:12:11",
-            children: (
-              <div className="timeline-content">
-                <h3>Time Span 2</h3>
-                <p>Solve initial network problems</p>
+            label: (
+              <div className="career-internship">
+                <h5 className="carrer-internship-class">Training</h5>
               </div>
             ),
+            children: (
+              <NeumorphismDiv
+                style={{ height: "350px", width: "135%" }}
+                coaching="Aptech Mumbai"
+                degree={"Aptech Certified Web Development"}
+                yearPassing={"February 2020"}
+                certificate={
+                  "https://www.onlinevarsity.com/sites/default/files/certificates/courses/CR1002447200221080008200181"
+                }
+                hint={"VIKR271295"}
+                label={"Training"}
+              />
+            ),
           },
-          // {
-          //   children: (
-          //     <div className="timeline-content">
-          //       <h3>Time Span 3</h3>
-          //       <p>Technical testing</p>
-          //     </div>
-          //   ),
-          // },
-          // {
-          //   label: "2015-09-01 09:12:11",
-          //   children: (
-          //     <div className="timeline-content">
-          //       <h3>Time Span 4</h3>
-          //       <p>Network problems being solved</p>
-          //     </div>
-          //   ),
-          // },
+          {
+            label: (
+              <div className="career-education">
+                <h5 className="carrer-education-class">Internship</h5>
+              </div>
+            ),
+            children: (
+              <NeumorphismDiv
+                style={{ height: "240px", width: "125%" }}
+                institute="Edureka"
+                degree={"MERN Stack Web Development"}
+                certificate={"https://www.edureka.co/verify"}
+                hint={"KN9U9NXZN (Certificate ID)"}
+                completionDate={"Feb 2022"}
+                label={"Internship"}
+              />
+            ),
+          },
+          {
+            label: (
+              <div className="career-internship">
+                <h5 className="carrer-internship-class">Work Experience</h5>
+              </div>
+            ),
+            children: (
+              <NeumorphismDiv
+                style={{ height: "320px", width: "135%" }}
+                company="Accenture"
+                position={"Position :- Content Review Practitioner"}
+                jobRoleFirst={
+                  "Content Evaluation :- Review and analyze user-generated content for adherence to policies and guidelines."
+                }
+                jobRoleSecond={
+                  "Decision Making :- Make decisions regarding the approval, modification, or removal of content."
+                }
+                jobRolethird={
+                  "Policy Implementation :- Apply content policies consistently across various content types and platforms."
+                }
+                fromTo={"Feb 2020 - Aug 2022"}
+                label={"Work Experience"}
+              />
+            ),
+          },
+          {
+            label: (
+              <div className="career-education">
+                <h5 className="carrer-education-class">Internship</h5>
+              </div>
+            ),
+            children: (
+              <NeumorphismDiv
+                style={{ height: "240px", width: "125%" }}
+                institute="Edureka"
+                degree={"MERN Stack Web Development"}
+                certificate={"https://www.edureka.co/verify"}
+                hint={"KN9U9NXZN (Certificate ID)"}
+                completionDate={"Feb 2022"}
+                label={"Internship"}
+              />
+            ),
+          },
         ]}
       />
     </section>

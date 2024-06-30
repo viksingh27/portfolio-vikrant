@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
-  height: 680px; /* Full viewport height */
+  height: 500px; /* Full viewport height */
   margin: 0 20px; /* Margin on both sides */
   /* background-color: #d07676; Background color for the home section */
   padding: 45px;
@@ -63,8 +63,9 @@
 
 .top-image {
   z-index: 2;
-  width: 80%;
-  height: 80%;
+  width: 170px;
+  height: 250px;
+  margin-left: 40px;
   object-fit: cover; /* Ensure the image fits the container */
 }
 
@@ -91,6 +92,9 @@
 }
 
 @media (max-width: 480px) {
+  .section {
+    height: 700px;
+  }
   .home-page {
     height: 800px;
   }

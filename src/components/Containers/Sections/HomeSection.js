@@ -1,12 +1,7 @@
 import React from "react";
 import "./HomeSection.css";
-import HeadIllustrator from "../../../assets/image (1).png";
+import man from "../../../assets/man.png";
 import blob1 from "../../../assets/Dual_blob.png";
-import blob2 from "../../../assets/Dual_blob (4).png";
-import blob3 from "../../../assets/Dual_blob (3).png";
-import blob4 from "../../../assets/Dual_blob (2).png";
-import blob5 from "../../../assets/Dual_blob (1).png";
-// import blob1 from "../../../assets/Dual_blob.png"
 
 const HomeSection = ({ id }) => {
   return (
@@ -24,11 +19,7 @@ const HomeSection = ({ id }) => {
         </div>
         <div className="image-container">
           <img src={blob1} className="bottom-image" alt="Bottom Image" />
-          {/* <img
-            src={HeadIllustrator}
-            className="top-image"
-            alt="Illustrator Head"
-          /> */}
+          <img src={man} className="top-image" alt="Illustrator Head" />
         </div>
       </div>
     </section>
