@@ -96,18 +96,23 @@ const CareerSection = ({ id }) => {
           {
             label: (
               <div className="career-education">
-                <h5 className="carrer-education-class">Internship</h5>
+                <h5 className="carrer-education-class">Frontend Experience</h5>
               </div>
             ),
             children: (
               <NeumorphismDiv
-                style={{ height: "240px", width: "125%" }}
-                institute="Edureka"
-                degree={"MERN Stack Web Development"}
-                certificate={"https://www.edureka.co/verify"}
-                hint={"KN9U9NXZN (Certificate ID)"}
-                completionDate={"Feb 2022"}
-                label={"Internship"}
+                style={{ height: "300px", width: "125%" }}
+                company="Iorta Technologies Pvt Ltd."
+                designation={"Software Engineer (Frontend developer)"}
+                jobRoleone={
+                  "Component Development in ReactJs / VueJs , State Management , Virsion Control , Debugging , Performance Optimization"
+                }
+                // jobRoletwo={"State Management"}
+                // jobRolethree={"Virsion Control"}
+                // jobRolefour={"Debugging"}
+                // jobRolefive={"Performance Optimization"}
+                completionDate={"Aug 2022 - Present"}
+                label={"Frontend Experience"}
               />
             ),
           },

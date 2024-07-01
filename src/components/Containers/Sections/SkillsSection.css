@@ -1,0 +1,90 @@
+.skills-section {
+  padding: 10px 20px;
+  /* height: 500px; */
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 150px;
+  /* background: #252734; */
+  border-radius: 20px;
+  /* filter: blur(5px); */
+  /* box-shadow: 15px 15px 15px #1d1e27, -0px 0px 120px #373a4b;
+  border: 1px solid rgba(255, 179, 0, 0.233); */
+  margin-bottom: 80px;
+}
+
+.skills-heading {
+  font-size: 4em; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  /* margin-bottom: 100px; Add some space below the heading */
+  color: rgba(255, 180, 0, 0.8);
+}
+
+.skills-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center content horizontally */
+  gap: 20px; /* Add some space between items */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  /* align-items: center; Center children horizontally */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  border: 1px solid rgba(255, 179, 0, 0.233);
+  flex-basis: calc(15% - 20px);
+  background: #252734;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-icon p {
+  margin: 0;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.743);
+}
+
+@media (max-width: 480px) {
+  .skills-section {
+    /* padding: 10px 20px; */
+    /* height: 500px; */
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 0px;
+    /* background: #252734; */
+    border-radius: 20px;
+    /* filter: blur(5px); */
+    /* /* box-shadow: 15px 15px 15px #1d1e27, -0px 0px 120px #373a4b; */
+    /* border: 1px solid rgba(255, 179, 0, 0.233); */
+    margin-bottom: 100px;
+  }
+
+  .skill-icon p {
+    margin: 0;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.743);
+  }
+
+  .skill-icon img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px; /* Space between icon and text */
+  }
+}

@@ -74,8 +74,8 @@ function App() {
       <Navbar />
       <HomeSection id="home" />
       <CareerSection id="career" />
-      {/* <SkillsSection id="skills" />
-      <ResumeSection id="resume" /> */}
+      <SkillsSection id="skills" />
+      {/* <ResumeSection id="resume" /> */}
     </div>
   );
 }

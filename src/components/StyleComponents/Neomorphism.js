@@ -197,13 +197,13 @@ const NeumorphismDiv = (props) => {
           </div>
         </>
       );
-    } else if (props?.label === "Internship") {
+    } else if (props?.label === "Frontend Experience") {
       return (
         <>
           <div
             className={
               deviceType === "mobile"
-                ? "mobileClass"
+                ? "mobileClass-frontend"
                 : "" || deviceType === "tablet"
                 ? "tabletClass"
                 : "neumorphism-div"
@@ -219,16 +219,13 @@ const NeumorphismDiv = (props) => {
                   : "time-line-content"
               }
             >
-              <h3>{props?.degree}</h3>
-              <p>Institute :- {props?.institute}</p>
-              <p>Completion Date :- {props?.completionDate}</p>
-              <p onClick={handleCeritificate}>
-                Certificte :-{" "}
-                <span className="certificate-text">
-                  {"https://www.edureka.co/verify"}
-                </span>
-              </p>
-              <p>Hint :- {props?.hint}</p>
+              <h3>{props?.designation}</h3>
+              <p>Company :- {props?.company}</p>
+              <div className="frontend-wrapper">
+                <p>Roles & Responsibilities :- {props?.jobRoleone}</p>
+              </div>
+
+              <p>{props?.completionDate}</p>
             </div>
           </div>
         </>
