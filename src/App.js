@@ -7,6 +7,7 @@ import HomeSection from "./components/Containers/Sections/HomeSection";
 import CareerSection from "./components/Containers/Sections/CareerSection";
 import SkillsSection from "./components/Containers/Sections/SkillsSection";
 import ResumeSection from "./components/Containers/Sections/ResumeSection";
+import ProjectSection from "./components/Containers/Sections/ProjectSection";
 
 function App() {
   const [showCursor, setShowCursor] = useState(true);
@@ -75,7 +76,8 @@ function App() {
       <HomeSection id="home" />
       <CareerSection id="career" />
       <SkillsSection id="skills" />
-      {/* <ResumeSection id="resume" /> */}
+      <ProjectSection id="projects" />
+      <ResumeSection id="resume" />
     </div>
   );
 }

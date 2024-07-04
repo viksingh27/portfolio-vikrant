@@ -18,6 +18,8 @@ import cssWithColor from "../../../assets/css-with-color.png";
 import cssWithoutColorIcon from "../../../assets/css-without-color.png";
 import jsonWithColor from "../../../assets/json-with-color.png";
 import jsonWithoutColorIcon from "../../../assets/json-wihtout-color.png";
+import veutifyWithoutColor from "../../../assets/veutify-without-color.png";
+import veutifyWithColor from "../../../assets/vuetify-with-color.png";
 
 const skills = [
   { icon: reactWithoutColorIcon, hoverIcon: reactWithColorIcon, name: "React" },
@@ -37,6 +39,8 @@ const skills = [
   { icon: reduxWithoutColorIcon, hoverIcon: reduxWithColor, name: "Redux" },
   { icon: cssWithoutColorIcon, hoverIcon: cssWithColor, name: "CSS3" },
   { icon: jsonWithoutColorIcon, hoverIcon: jsonWithColor, name: "JSON" },
+  { icon: veutifyWithoutColor, hoverIcon: veutifyWithColor, name: "Vuetify" },
+  // { icon: jsonWithoutColorIcon, hoverIcon: jsonWithColor, name: "JSON" },
   // Add more skills here...
 ];
 

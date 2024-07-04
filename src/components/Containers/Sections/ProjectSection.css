@@ -1,0 +1,168 @@
+.project-section {
+  padding: 10px 20px;
+  height: auto;
+  width: 100%;
+
+  /* background: #252734; */
+}
+
+.project-heading {
+  font-size: 4em; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  /* margin-bottom: 100px; Add some space below the heading */
+  color: rgba(255, 180, 0, 0.8);
+}
+
+.carousel-container {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+  margin-left: 27.5%;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.contentStyle {
+  margin: 2px;
+  padding: 10px;
+  height: 500px;
+  color: #fff;
+  /* line-height: 50px; */
+  text-align: center;
+  /* background: cornflowerblue; */
+  border: 1px solid rgba(255, 179, 0, 0.233);
+  border-radius: 8px;
+}
+
+.project-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-technologies {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center content horizontally */
+  gap: 10px;
+}
+
+.project-title {
+  font-size: 20px;
+  margin-top: 50px;
+  color: rgba(255, 180, 0, 0.8);
+}
+
+.project-description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.project-roles,
+.project-responsibilities {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-links .ant-btn {
+  margin: 5px;
+}
+.skill-item-project {
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  /* align-items: center; Center children horizontally */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* border: 1px solid rgba(255, 179, 0, 0.233); */
+  flex-basis: calc(15% - 20px);
+  /* background: #252734; */
+  border-radius: 8px;
+  /* padding: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item-project:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+
+.skill-icon-project p {
+  margin: 0;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.743);
+}
+
+@media (max-width: 480px) {
+  .contentStyleMobile {
+    margin: 2px;
+    padding: 10px;
+    height: 630px;
+    color: #fff;
+    /* width: 100%; */
+    /* line-height: 50px; */
+    text-align: center;
+    background: #252734;
+    border: 1px solid rgba(255, 179, 0, 0.233);
+    border-radius: 8px;
+  }
+
+  .carousel-container {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 0%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+  }
+
+  .skill-icon-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+  }
+  .skill-item-project {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    /* align-items: center; Center children horizontally */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* border: 1px solid rgba(255, 179, 0, 0.233); */
+    flex-basis: calc(15% - 20px);
+    /* background: #252734; */
+    border-radius: 8px;
+    /* padding: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    margin: 22px;
+    transition: transform 0.3s ease;
+  }
+  .project-heading {
+    font-size: 2em; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center;
+    margin-right: 50px;
+    /* margin-bottom: 100px; Add some space below the heading */
+    color: rgba(255, 180, 0, 0.8);
+  }
+}

@@ -87,4 +87,12 @@
     height: 30px;
     margin-bottom: 10px; /* Space between icon and text */
   }
+  .skills-heading {
+    font-size: 2em; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    /* margin-bottom: 100px; Add some space below the heading */
+    color: rgba(255, 180, 0, 0.8);
+  }
 }
