@@ -1,11 +1,74 @@
-footer {
-    background-color: #121212;
-    color: #E0E0E0;
-    text-align: center;
-    /* padding: 20px; */
-    height: 50px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.footer {
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+  /* padding: 20px; */
+  height: 400px;
+  width: 100%;
+  /* position: absolute;
+  bottom: 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center align items horizontally */
+  /* height: 300px; */
+  width: 100%;
+}
+
+.footer-section {
+  flex: 1; /* Flex-grow, flex-shrink, flex-basis */
+  margin: 10px;
+  padding: 20px; /* Increased padding for better spacing */
+  /* background-color: #333; Example background color */
+  border-right: 1px solid #fff;
+  text-align: center; /* Center align text */
+  line-height: 1.5;
+}
+
+#achievements {
+  border-right: none; /* Remove border-right from the last .footer-section */
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: rgba(255, 180, 0, 0.8);
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.achievement {
+  margin: 10px 0;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    /* margin-top: ; */
+    height: 900px;
   }
-  
+  .footer-section {
+    text-align: center;
+  }
+  .footer-section {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+  #achievements {
+    border-bottom: none; /* Remove border-right from the last .footer-section */
+  }
+}
