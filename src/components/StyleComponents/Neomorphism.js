@@ -5,10 +5,10 @@ import "./Neomorphism.css";
 
 const NeumorphismDiv = (props) => {
   // const { style } = props;
-  console.log("Style--->", props);
+  // console.log("Style--->", props);
   // console.log("Style", style);
   const [deviceType, setDeviceType] = useState("desktop");
-  console.log("resize", deviceType);
+  // console.log("resize", deviceType);
   useEffect(() => {
     const checkDeviceType = () => {
       if (window.matchMedia("(max-width: 767px)").matches) {

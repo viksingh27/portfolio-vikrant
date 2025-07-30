@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./ResumeSection.css";
 import { Image } from "antd";
+import image1 from "../../../assets/resume_page1.png";
+import image2 from "../../../assets/resume_page2.png";
 
 const ResumeSection = ({ id }) => {
   const [deviceType, setDeviceType] = useState("desktop");
@@ -36,30 +38,28 @@ const ResumeSection = ({ id }) => {
         <div className="image-section-resume">
           <Image.PreviewGroup
             items={[
-              "https://resume-vikrant.s3.ap-south-1.amazonaws.com/resume-vikrant-1.jpg",
-              "https://resume-vikrant.s3.ap-south-1.amazonaws.com/resume-vikrant-2.jpg",
-              "https://resume-vikrant.s3.ap-south-1.amazonaws.com/resume-vikrant-3.jpg",
+              image1,
+              image2,
+              // Add more local images here
             ]}
           >
             <Image
               width={
-                deviceType == "mobile"
+                deviceType === "mobile"
                   ? 200
-                  : 0 || deviceType == "tablet"
+                  : deviceType === "tablet"
                   ? 400
                   : 400
               }
               height={
-                deviceType == "mobile"
+                deviceType === "mobile"
                   ? 300
-                  : 0 || deviceType == "tablet"
+                  : deviceType === "tablet"
                   ? 500
                   : 500
               }
-              src="https://resume-vikrant.s3.ap-south-1.amazonaws.com/resume-vikrant-blur.jpg"
-              preview={{
-                src: "https://resume-vikrant.s3.ap-south-1.amazonaws.com/resume-vikrant-1.jpg",
-              }}
+              src={image1} // 👈 this must match one from `items`
+              preview={{ src: image1 }} // optional
             />
           </Image.PreviewGroup>
         </div>
